@@ -96,8 +96,8 @@ if __name__=='__main__':
     pro=[]
     i=0
     while i<pachong_num:    
-        pro.append(multiprocessing.Process(target=downloadhtml,args=(i,)))
-        pro[i].start()
+        pro.append(multiprocessing.Process(target=downloadhtml,args=(i,)))    
+        pro[i].start()                    #kaiqipachongmokuai
         i=i+1
     pro.append(multiprocessing.Process(target=queue_arrange))
     pro[i].start()
